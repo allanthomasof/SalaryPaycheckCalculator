@@ -1,0 +1,35 @@
+<html>
+<meta charset="UTF-8">
+<link type="text/css" rel="stylesheet" href="client/css/style.css">
+<head>
+    <title>Salary Paycheck Calculator</title>
+</head>
+<body>
+    <form id="form" class="form" action="server/calcular.php" method="post" enctype="multipart/form-data">
+        <legend>Salary Paycheck Calculator</legend>
+        <table>
+            <tr>
+                <td>Salary</td>
+                <td><input type="text" name="salary" id="salary" class="salary"></td>
+                <td><button>Calcular</button></td>
+            </tr>
+            <tr>
+                <td>INSS:</td>
+                <td id="inss"></td>
+            </tr>
+            <tr>
+                <td>IRPF:</td>
+                <td id="irpf"></td>
+            </tr>
+            <tr>
+                <td>Salary Liquid:</td>
+                <td id="salario"></td>
+            </tr>
+        </table>        
+    </form> 
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="client/js/script.js"></script>
+    
+</body>
+</html>
